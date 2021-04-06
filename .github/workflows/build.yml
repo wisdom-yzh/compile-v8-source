@@ -27,4 +27,9 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: v8-artifact
-        path: path/to/artifact/world.txt
+        path: |
+          output
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: v8-artifact
